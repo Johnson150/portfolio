@@ -19,7 +19,7 @@ export const GET = async (request, { params }) => {
         }
         return NextResponse.json(education);
     } catch (error) {
-        return NextResponse.json({ status: 500 }, { message: "Error getting post", error })
+        return NextResponse.json({ status: 500 }, { message: "Error getting education", error })
 
     }
 }
@@ -49,10 +49,10 @@ export const PATCH = async (request, { params }) => {
         if (!updateEducation) {
             return NextResponse.json({ status: 404 }, { message: "Education not found" })
         }
-        return NextResponse.json(education);
+        return NextResponse.json(updateEducation);
 
     } catch (error) {
-        return NextResponse.json({ status: 500 }, { message: "Error updating Educato", error })
+        return NextResponse.json({ status: 500 }, { message: "Error updating Education", error })
     }
 }
 

@@ -17,7 +17,7 @@ export const GET = async (request, { params }) => {
         if (!experience) {
             return NextResponse.json({ status: 404 }, { message: "Experience not found" })
         }
-        return NextResponse.json(post);
+        return NextResponse.json(experience);
     } catch (error) {
         return NextResponse.json({ status: 500 }, { message: "error getting experience", error })
 
