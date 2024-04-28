@@ -32,7 +32,7 @@ export const PATCH = async (request, { params }) => {
         const { name,
             level } = body;
         // updates the player in the database
-        const updateskills = await client.skills.update({
+        const updateSkills = await client.skills.update({
             where: {
                 id
             },
@@ -45,7 +45,7 @@ export const PATCH = async (request, { params }) => {
         if (!updateskills) {
             return NextResponse.json({ status: 404 }, { message: "Skills not found" })
         }
-        return NextResponse.json(updateskills);
+        return NextResponse.json(updateSkills);
 
     } catch (error) {
         return NextResponse.json({ status: 500 }, { message: "Error updating skills", error })
