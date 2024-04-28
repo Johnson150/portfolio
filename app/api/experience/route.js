@@ -9,12 +9,14 @@ export const POST = async (req) => {
         const body = await req.json();
         const { startDate,
             endDate,
+            company,
             position,
             description, } = body;
         const newExperience = await client.experience.create({
             data: {
                 startDate,
                 endDate,
+                company,
                 position,
                 description,
             },

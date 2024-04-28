@@ -31,6 +31,7 @@ export const PATCH = async (request, { params }) => {
         const { id } = params;
         const { startDate,
             endDate,
+            company,
             position,
             description, } = body;
         // updates the player in the database
@@ -41,6 +42,7 @@ export const PATCH = async (request, { params }) => {
             data: {
                 startDate,
                 endDate,
+                company,
                 position,
                 description
             }
