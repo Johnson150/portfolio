@@ -15,11 +15,11 @@ export const GET = async (request, { params }) => {
             }
         });
         if (!skills) {
-            return NextResponse.json({ status: 404 }, { message: "education not found" })
+            return NextResponse.json({ status: 404 }, { message: "Skills not found" })
         }
         return NextResponse.json(skills);
     } catch (error) {
-        return NextResponse.json({ status: 500 }, { message: "Error getting Skills", error })
+        return NextResponse.json({ status: 500 }, { message: "Error getting skills", error })
 
     }
 }
@@ -42,7 +42,7 @@ export const PATCH = async (request, { params }) => {
             }
         });
         // if the player is not found, return a 404 status
-        if (!updateskills) {
+        if (!updateSkills) {
             return NextResponse.json({ status: 404 }, { message: "Skills not found" })
         }
         return NextResponse.json(updateSkills);
@@ -52,7 +52,21 @@ export const PATCH = async (request, { params }) => {
     }
 }
 
+export const DELETE = async (request, { params }) => {
+    try {
+        const { id } = params;
+        await client.skills.delete({
+            where: {
+                id
+            }
+        });
+        return NextResponse.json({ status: 200 }, { message: "skill deleted" });
 
+    } catch (error) {
+        console.error(error); // Log the error for debugging purposes
+        return NextResponse.json({ status: 500 }, { message: "Error deleting skill", error });
+    }
+};
 
 
 export const FETCH = async () => {
