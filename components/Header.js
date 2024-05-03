@@ -8,19 +8,19 @@ const Header = () => {
     const navItems = [
         { label: "About Me", href: "/" },
         { label: "Resume", href: "/resume" },
-        { label: "Projects", href: "/projects" },
+        { label: "Projects", href: "/project" },
     ];
 
     return (
-        <div>
-            <ul className="flex gap-5 p-10">
+        <div className="bg-black"> {/* Header background color */}
+            <ul className="flex gap-5 p-10 text-white"> {/* Text color and padding */}
                 {navItems.map((link, index) => (
-                    <li key={index}>
+                    <li key={index} className="hover:text-green-600"> {/* Hover effect */}
                         <Link
                             href={link.href}
                             className={
-                                pathname === link.href ? "text-blue-500 font-bold" : ""
-                            }
+                                pathname === link.href ? "text-green-500 font-bold" : "hover:text-green-600"
+                            } // Active link styling
                         >
                             {link.label}
                         </Link>

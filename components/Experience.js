@@ -26,20 +26,20 @@ function ExperienceComponent() {
         fetchExperience();
     }, []);
 
-    if (loading) return <p>Loading...</p>;
+    if (loading) return <p>Working Hard...</p>;
     if (error) return <p>Error: {error}</p>;
 
     return (
-        <div>
-            <h1>Professional Experience</h1>
+        <div className="bg-black text-green-500 p-5 rounded-lg shadow-lg">
+            <h1 className="text-3xl font-bold mb-4">Professional Experience</h1>
             {experiences.length > 0 ? (
                 <ul>
                     {experiences.map((experience, index) => (
-                        <li key={index}>
-                            <h2>{experience.company}</h2>
-                            <p>Position: {experience.position}</p>
-                            <p>Description: {experience.description}</p>
-                            <p>From: {experience.startDate} To: {experience.endDate}</p>
+                        <li key={index} className="mb-2">
+                            <h2 className="text-2xl font-semibold slide-transition">{experience.company}</h2>
+                            <p className="mt-2 text-lg slide-transition">Position: {experience.position}</p>
+                            <p className="mt-2 text-lg slide-transition">Description: {experience.description}</p>
+                            <p className="mt-2 text-lg slide-transition">From: {experience.startDate} To: {experience.endDate}</p>
                         </li>
                     ))}
                 </ul>

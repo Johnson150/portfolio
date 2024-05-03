@@ -17,11 +17,48 @@
 }
 
 body {
- 
+  @apply bg-black text-green-500; /* Applying background and text color globally */
 }
 
 @layer utilities {
   .text-balance {
     text-wrap: balance;
   }
+}
+
+
+@keyframes typing {
+  from { width: 0; }
+  to { width: 100%; }
+}
+
+@keyframes blink-caret {
+  50% { border-color: transparent; }
+}
+
+.typing-effect {
+  overflow: hidden;
+  border-right: .15em solid black; /* The typewriter cursor */
+  white-space: nowrap;
+  letter-spacing: .15em;
+}
+
+.typing-complete {
+  animation: none;
+  border-right: none;
+}
+
+@keyframes slideInFromLeft {
+  0% {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+.slide-transition {
+  animation: slideInFromLeft 1s ease-out forwards;
 }

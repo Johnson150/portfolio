@@ -26,19 +26,19 @@ function EducationComponent() {
         fetchEducation();
     }, []);
 
-    if (loading) return <p>Loading...</p>;
-    if (error) return <p>Error: {error}</p>;
+    if (loading) return <p className="text-white">Working Hard...</p>;
+    if (error) return <p className="text-red-500">Error: {error}</p>;
 
     return (
-        <div>
-            <h1>Education History</h1>
+        <div className="bg-black text-green-500 p-5 rounded-lg shadow-lg">
+            <h1 className="text-3xl font-bold mb-4">Education History</h1>
             {educations.length > 0 ? (
                 <ul>
                     {educations.map((education, index) => (
-                        <li key={index}>
-                            <h2>{education.institution}</h2>
-                            <p>Diploma: {education.diploma}</p>
-                            <p>From: {education.startDate} To: {education.endDate}</p>
+                        <li key={index} className="mb-2">
+                            <h2 className="text-2xl font-semibold">{education.institution}</h2>
+                            <p className="mt-2 text-lg slide-transition">Diploma: {education.diploma}</p>
+                            <p className="mt-2 text-lg slide-transition">From: {education.startDate} To: {education.endDate}</p>
                         </li>
                     ))}
                 </ul>

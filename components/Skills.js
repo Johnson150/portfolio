@@ -26,25 +26,26 @@ function SkillsComponent() {
         fetchSkills();
     }, []);
 
-    if (loading) return <p>Loading...</p>;
+    if (loading) return <p>Working Hard...</p>;
     if (error) return <p>Error: {error}</p>;
 
     return (
-        <div>
-            <h1>Skills</h1>
+        <div className="bg-black text-green-500 p-5 rounded-lg shadow-lg">
+            <h1 className="text-3xl font-bold mb-4">Skills</h1>
             {skills.length > 0 ? (
                 <ul>
                     {skills.map((skill, index) => (
                         <li key={index}>
-                            <h2>{skill.name}</h2>
-                            <p>Level: {skill.level}</p>
-                        </li>
-                    ))}
-                </ul>
+                            <h2 className="text-2xl font-semibold slide-transition" >{skill.name}</h2>
+                            <p className="mt-2 text-lg slide-transition">Level: {skill.level}</p>
+                        </li >
+                    ))
+                    }
+                </ul >
             ) : (
                 <p>No skills records found.</p>
             )}
-        </div>
+        </div >
     );
 }
 
