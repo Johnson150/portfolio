@@ -26,7 +26,10 @@ const AboutMe = () => {
         <div>
             <Header />
             <main className="w-full flex flex-col justify-center items-center text-center mt-5 bg-black p-5 rounded-lg shadow">
-                <h1 className="text-3xl font-bold text-green-500">{text}</h1> {/* Updated font and color */}
+                <h1 className="text-3xl font-bold text-green-500">{text}</h1>
+                <div className='p-5 flex justify-center items-center'>
+                    <img src="/Profile pic.jpg" alt="profile pic" className="w-auto h-auto rounded-lg shadow-lg slide-transition" />
+                </div>
                 <p className="mt-2 text-lg slide-transition">
                     Hi, my name is Johnson! Growing up, I always had a desire to be creative in different outlets such as being a part of drama productions and choir.
                     Looking for a more creative outlet in my post-secondary life, I decided to pursue the Information Technology and Software Development diploma at the Southern Alberta Institute of Technology.
@@ -37,6 +40,7 @@ const AboutMe = () => {
                 </p>
             </main>
         </div>
+
     );
 };
 
