@@ -29,7 +29,7 @@ const AboutMe = () => {
                 <h1 className="text-3xl font-bold text-green-500">{text}</h1>
                 <p className="mt-2 text-lg slide-transition">This page is going to be my projects </p>
                 <div className="p-20">
-                    <h1 className="text-3xl font-bold text-green-500">NBA App</h1>
+                    <h2 className="text-2xl font-bold text-green-500">NBA App</h2>
                     <p className="mt-2 text-lg slide-transition">
                         This app offers a range of features designed to enhance the basketball fan experience. Users can add, remove, and edit player profiles, empowering them to curate their own personalized roster. Additionally, the app enables users to explore player statistics through intuitive filtering based on specific stat categories. With a convenient search bar, users can easily look up specific players of interest.
                         <br /><br />
@@ -45,18 +45,18 @@ const AboutMe = () => {
                     </div>
                 </div>
                 <div className="p-20">
-                    <h1 className="text-3xl font-bold text-green-500">IMR Movie App</h1>
+                    <h2 className="text-2xl font-bold text-green-500">IMR Movie App</h2>
                     <p className="mt-2 text-lg slide-transition">This app allows users to add movies, remove movies and edit movies.</p>
                     <div className='p-5 flex justify-center items-center'>
                         <img src="/IMR movie preview.png" alt="IMR Movie App Preview" className="w-2/6 h-1/2 rounded-lg shadow-lg slide-transition" ></img>
                     </div>
-                    <div className='p-20'>
+                    <div className='p-5'>
                         <a href="https://github.com/NavkiratPuri/asg3movies" className="mt-12 bg-green-500 text-white font-bold py-2 px-4 rounded hover:bg-green-600 transition duration-300 slide-up">Code</a>
                         <a href="https://asg3movies.vercel.app/" className="mx-4 mt-12 bg-green-500 text-white font-bold py-2 px-4 rounded hover:bg-green-600 transition duration-300 slide-up">Site</a>
                     </div>
                 </div>
                 <div className="p-20">
-                    <h1 className="text-3xl font-bold text-green-500">Unit converter</h1>
+                    <h2 className="text-2xl font-bold text-green-500">Unit converter</h2>
                     <p className="mt-2 text-lg slide-transition">This app allows users to convert temperature, distance and weight.</p>
                     <div className='p-5 flex justify-center items-center'>
                         <img src="/Unit Converter.png" alt="Unit Converter Preview" className="w-2/6 h-1/2 rounded-lg shadow-lg slide-transition" ></img>
@@ -67,7 +67,7 @@ const AboutMe = () => {
                     </div>
                 </div>
                 <div className="p-20">
-                    <h1 className="text-3xl font-bold text-green-500">Raj Robot Rental</h1>
+                    <h2 className="text-2xl font-bold text-green-500">Raj Robot Rental</h2>
                     <p className="mt-2 text-lg slide-transition">This app allows users to see the price of how much it cost to rent out two different models of robots by duration and rate.</p>
                     <div className='p-5 flex justify-center items-center'>
                         <img src="/raj robot rental.png" alt="Unit Converter Preview" className="w-2/6 h-1/2 rounded-lg shadow-lg slide-transition" ></img>
