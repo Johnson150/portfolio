@@ -37,7 +37,7 @@ const Project = () => {
                     </p>
                     <p className="mt-2 text-lg slide-transition">This is a ongoing project with even more functionality in the near future!</p>
                     <div className="p-5 flex justify-center items-center">
-                        <img src="/NBA Player App.png" alt="Unit Converter Preview" className="w-2/6 h-1/2 rounded-lg shadow-lg slide-transition" ></img>
+                        <img src="/NBA player app.png" alt="NBA player app Preview" className="w-2/6 h-1/2 rounded-lg shadow-lg slide-transition" ></img>
                     </div>
                     <div className="p-5">
                         <a href="https://github.com/Johnson150/basketballapp" className="mt-12 bg-green-500 text-white font-bold py-2 px-4 rounded hover:bg-green-600 transition duration-300 slide-up">Code</a>
