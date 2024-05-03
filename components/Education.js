@@ -26,7 +26,7 @@ function EducationComponent() {
         fetchEducation();
     }, []);
 
-    if (loading) return <p className="text-white">Working Hard...</p>;
+    if (loading) return <p>Working Hard...</p>;
     if (error) return <p className="text-red-500">Error: {error}</p>;
 
     return (

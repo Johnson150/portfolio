@@ -4,7 +4,7 @@ import '../app/globals.css';
 
 const AboutMe = () => {
     const [text, setText] = useState('');
-    const fullText = 'print(Hello World!)';
+    const fullText = 'print("Hello World!")';
 
     useEffect(() => {
         let index = 0;
@@ -27,7 +27,14 @@ const AboutMe = () => {
             <Header />
             <main className="w-full flex flex-col justify-center items-center text-center mt-5 bg-black p-5 rounded-lg shadow">
                 <h1 className="text-3xl font-bold text-green-500">{text}</h1> {/* Updated font and color */}
-                <p className="mt-2 text-lg slide-transition">Hi my name is Johnson!</p>
+                <p className="mt-2 text-lg slide-transition">
+                    Hi, my name is Johnson! Growing up, I always had a desire to be creative in different outlets such as being a part of drama productions and choir.
+                    Looking for a more creative outlet in my post-secondary life, I decided to pursue the Information Technology and Software Development diploma at the Southern Alberta Institute of Technology.
+                    Being able to create applications has always interested me, and going to SAIT really helped me learn lots of skills that will help me in my future professional life.
+                    In my year and a half at SAIT, I have learned many programming languages such as PL/SQL, Python, Java, and C#. I've also learned and worked with software such as Figma and SIM (Software Ideas Modeler).
+                    Through my studies, I have found myself absolutely fascinated with the world of web development. I have learned crucial skills in HTML, CSS, JavaScript, React.js, and Next.js.
+                    After my studies, I plan to pursue a career in Web Development.
+                </p>
             </main>
         </div>
     );
