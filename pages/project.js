@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import Header from '@/components/Header';  // Make sure the path is correct based on your project structure.
 import '../app/globals.css';
 
-const AboutMe = () => {
+const Project = () => {
     const [text, setText] = useState('');
     const fullText = 'print("Hello Projects!")';
 
@@ -82,4 +82,4 @@ const AboutMe = () => {
     );
 }
 
-export default AboutMe;
+export default Project;
