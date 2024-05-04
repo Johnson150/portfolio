@@ -22,7 +22,7 @@ const ContactPage = () => {
             <main className="w-full flex flex-col justify-center items-center text-center mt-5 bg-gradient-to-r from-green-400 to-blue-500 p-5 rounded-lg shadow">
                 <h1 className="text-3xl font-bold text-white">Contact Me</h1>
                 {submitted ? (
-                    <p className="text-lg text-white">Thank you for your message! I'll get back to you as soon as possible.</p>
+                    <p className="text-lg text-white">Thank you for your message! I&apos;ll get back to you as soon as possible.</p>
                 ) : (
                     <form onSubmit={handleSubmit} className="w-full max-w-lg mt-8">
                         <div className="flex flex-wrap mb-6">
