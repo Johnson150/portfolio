@@ -4,7 +4,7 @@ import '../app/globals.css';
 
 const Project = () => {
     const [text, setText] = useState('');
-    const fullText = 'print("Hello Project!")';
+    const fullText = 'print("Hello Projects!")';
 
     useEffect(() => {
         let index = 0;
@@ -26,10 +26,9 @@ const Project = () => {
         <div>
             <Header />
             <main className="w-full flex flex-col justify-center items-center text-center mt-5 bg-black p-5 rounded-lg shadow">
-                <h1 className="text-3xl font-bold text-green-500">{text}</h1>
-                <p className="mt-2 text-lg slide-transition">This page is going to be my projects </p>
+                <h1 className="text-3xl text-green-500 font-mono realtive">{text}</h1>
                 <div className="p-20">
-                    <h2 className="text-2xl font-bold text-green-500">NBA App</h2>
+                    <h2 className="text-2xl font-mono text-green-500">NBA App</h2>
                     <p className="mt-2 text-lg slide-transition">
                         This app offers a range of features designed to enhance the basketball fan experience. Users can add, remove, and edit player profiles, empowering them to curate their own personalized roster. Additionally, the app enables users to explore player statistics through intuitive filtering based on specific stat categories. With a convenient search bar, users can easily look up specific players of interest.
                         <br /><br />
@@ -45,7 +44,7 @@ const Project = () => {
                     </div>
                 </div>
                 <div className="p-20">
-                    <h2 className="text-2xl font-bold text-green-500">IMR Movie App</h2>
+                    <h2 className="text-2xl font-mono text-green-500">IMR Movie App</h2>
                     <p className="mt-2 text-lg slide-transition">This app allows users to add movies, remove movies and edit movies.</p>
                     <div className="p-5 flex justify-center items-center">
                         <img src="/IMR movie preview.png" alt="IMR Movie App Preview" className="w-2/6 h-1/2 rounded-lg shadow-lg slide-transition" ></img>
@@ -56,7 +55,7 @@ const Project = () => {
                     </div>
                 </div>
                 <div className="p-20">
-                    <h2 className="text-2xl font-bold text-green-500">Unit converter</h2>
+                    <h2 className="text-2xl font-mono text-green-500">Unit converter</h2>
                     <p className="mt-2 text-lg slide-transition">This app allows users to convert temperature, distance and weight.</p>
                     <div className="p-5 flex justify-center items-center">
                         <img src="/Unit Converter.png" alt="Unit Converter Preview" className="w-2/6 h-1/2 rounded-lg shadow-lg slide-transition" ></img>
@@ -67,7 +66,7 @@ const Project = () => {
                     </div>
                 </div>
                 <div className="p-20">
-                    <h2 className="text-2xl font-bold text-green-500">Raj Robot Rental</h2>
+                    <h2 className="text-2xl font-mono text-green-500">Raj Robot Rental</h2>
                     <p className="mt-2 text-lg slide-transition">This app allows users to see the price of how much it cost to rent out two different models of robots by duration and rate.</p>
                     <div className="p-5 flex justify-center items-center">
                         <img src="/raj robot rental.png" alt="Unit Converter Preview" className="w-2/6 h-1/2 rounded-lg shadow-lg slide-transition" ></img>

@@ -29,7 +29,7 @@ function ResumePage() {
         <div>
             <main>
                 <Header />
-                <h1 className="text-3xl font-bold text-green-500 text-center">{text}</h1>
+                <h1 className="text-3xl font-mono realtive text-green-500 text-center">{text}</h1>
                 <div className="bg-black text-green-500 p-5 rounded-lg shadow-lg">
                     <p className="mt-2 text-lg slide-transition">Johnson Giang</p>
                     <p className="mt-2 text-lg slide-transition">Phone Number: 587-439-0250</p>

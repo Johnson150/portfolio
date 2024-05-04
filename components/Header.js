@@ -1,6 +1,7 @@
 "use client";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
+import '../app/globals.css';
 
 const Header = () => {
     const pathname = usePathname();
@@ -12,23 +13,29 @@ const Header = () => {
     ];
 
     return (
-        <div className="bg-black"> {/* Header background color */}
-            <ul className="flex gap-5 p-10 text-white"> {/* Text color and padding */}
+        <div className="bg-black font-mono relative overflow-hidden">
+
+            <div className="absolute top-0 left-0 w-full h-full matrix-rain-animation z-1"></div>
+
+
+            <ul className="flex gap-5 p-10 text-green-300 relative z-10">
                 {navItems.map((link, index) => (
-                    <li key={index} className="hover:text-green-600"> {/* Hover effect */}
+                    <li key={index} className="hover:text-green-500">
                         <Link
                             href={link.href}
                             className={
-                                pathname === link.href ? "text-green-500 font-bold" : "hover:text-green-600"
-                            } // Active link styling
+                                pathname === link.href ? "text-green-500 font-bold" : "text-green-300 hover:text-green-500"}
                         >
+
                             {link.label}
                         </Link>
                     </li>
                 ))}
             </ul>
-        </div>
+        </div >
     );
 };
 
 export default Header;
+
+

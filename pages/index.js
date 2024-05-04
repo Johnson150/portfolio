@@ -26,9 +26,9 @@ const AboutMe = () => {
         <div>
             <Header />
             <main className="w-full flex flex-col justify-center items-center text-center mt-5 bg-black p-5 rounded-lg shadow">
-                <h1 className="text-3xl font-bold text-green-500">{text}</h1>
+                <h1 className="text-3xl text-green-500 font-mono realtive">{text}</h1>
                 <section className="p-20">
-                    <h2 className="text-2xl font-bold text-green-500">About me</h2>
+                    <h2 className="text-2xl font-mono text-green-500">About me</h2>
                     <div className="p-5 flex justify-center items-center">
                         <img src="/Profile pic.jpg" alt="profile pic" className="w-auto h-auto rounded-lg shadow-lg slide-up" />
                     </div>
@@ -42,7 +42,7 @@ const AboutMe = () => {
                     </p>
 
                 </section>
-                <h2 className="text-2xl font-bold text-green-500">Additional links</h2>
+                <h2 className="text-2xl font-mono text-green-500">Additional links</h2>
                 <section className="p-20">
                     <div className="p-5 flex justify-center items-center">
                         <img
@@ -59,7 +59,7 @@ const AboutMe = () => {
                         />
                     </div>
                 </section>
-                <h2 className="text-2xl font-bold text-green-500 mt-5">This site is built with:</h2>
+                <h2 className="text-2xl font-mono text-green-500 mt-5">This site is built with:</h2>
                 <div className="p-20 flex justify-center items-center">
                     <img src="/HTML.png" alt="HTML logo" className="w-1/6 h-1/6 rounded-lg shadow-lg slide-transition mx-auto"></img>
                     <img src="/CSS.jpg" alt="CSS logo" className="w-1/6 h-1/6 rounded-lg shadow-lg slide-transition mx-auto"></img>
