@@ -26,14 +26,14 @@ function ResumePage() {
     }, []);
 
     return (
-        <div>
-            <main>
-                <Header />
-                <h1 className="text-3xl font-mono realtive text-green-500 text-center">{text}</h1>
-                <div className="bg-black text-green-500 p-5 rounded-lg shadow-lg">
-                    <p className="mt-2 text-lg slide-transition">Johnson Giang</p>
-                    <p className="mt-2 text-lg slide-transition">Phone Number: 587-439-0250</p>
-                    <p className="mt-2 text-lg slide-transition">Johnson.Giang21@gmail.com</p>
+        <div className="min-h-screen">
+            <Header />
+            <main className="container mx-auto px-4 pt-24">
+                <h1 className="text-3xl font-mono text-white text-center mb-6">{text}</h1>
+                <div className="bg-gradient-to-r from-brightPink to-brightBlue text-white p-5 rounded-lg shadow-xl">
+                    <p className="text-lg font-bold slide-transition">Johnson Giang</p>
+                    <p className="text-md slide-transition">Phone Number: 587-439-0250</p>
+                    <p className="text-md slide-transition">Email: Johnson.Giang21@gmail.com</p>
                 </div>
                 <EducationComponent />
                 <SkillsComponent />

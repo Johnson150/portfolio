@@ -1,4 +1,3 @@
-"use client";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import '../app/globals.css';
@@ -10,32 +9,26 @@ const Header = () => {
         { label: "About Me", href: "/" },
         { label: "Resume", href: "/resume" },
         { label: "Projects", href: "/project" },
+        { label: "Contact", href: "/contact" }
     ];
 
     return (
-        <div className="bg-black font-mono relative overflow-hidden">
-
-            <div className="absolute top-0 left-0 w-full h-full matrix-rain-animation z-1"></div>
-
-
-            <ul className="flex gap-5 p-10 text-green-300 relative z-10">
+        <div className="bg-gradient-to-r from-purple-800 to-blue-500 font-mono w-full z-30 shadow-lg">
+            <div className="absolute inset-0 w-full h-full matrix-rain-animation z-10 opacity-75"></div>
+            <ul className="flex justify-center gap-8 p-5 text-lg text-white relative z-20">
                 {navItems.map((link, index) => (
-                    <li key={index} className="hover:text-green-500">
+                    <li key={index} className={`${pathname === link.href ? "font-bold underline" : "hover:underline"}`}>
                         <Link
                             href={link.href}
-                            className={
-                                pathname === link.href ? "text-green-500 font-bold" : "text-green-300 hover:text-green-500"}
+                            className={`${pathname === link.href ? "text-white" : "text-green-300 hover:text-white"}`}
                         >
-
                             {link.label}
                         </Link>
                     </li>
                 ))}
             </ul>
-        </div >
+        </div>
     );
 };
 
 export default Header;
-
-

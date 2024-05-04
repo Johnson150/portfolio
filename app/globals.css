@@ -17,7 +17,10 @@
 }
 
 body {
-  @apply bg-black text-green-500; /* Applying background and text color globally */
+  background-image: linear-gradient(to right, #FF69B4, #00BFFF);
+  min-height: 100vh;
+  margin: 0;
+  background-attachment: fixed;
 }
 
 @layer utilities {
@@ -79,14 +82,3 @@ body {
   animation: slideUp 0.5s ease-out forwards;
 }
 
-@keyframes matrixRain {
-  0% { background-position: 0 0; }
-  100% { background-position: 100% 100%; }
-}
-
-.matrix-rain-animation {
-  background: linear-gradient(to bottom, rgba(0, 128, 0, 0.1) 75%, transparent 100%), 
-              linear-gradient(to right, rgba(0, 128, 0, 0.1) 100%, transparent 100%);
-  background-size: 2px 100%, 100% 2px;
-  animation: matrixRain 60s linear infinite;
-}

@@ -30,8 +30,8 @@ function SkillsComponent() {
     if (error) return <p>Error: {error}</p>;
 
     return (
-        <div className="bg-black text-green-500 p-5 rounded-lg shadow-lg">
-            <h1 className="text-3xl font-mono mb-4">Skills</h1>
+        <div className="bg-gradient-to-r from-brightPink to-brightBlue text-white p-5 rounded-lg shadow-xl">
+            <h1 className="text-3xl font-bold mb-4">Skills</h1>
             {skills.length > 0 ? (
                 <ul>
                     {skills.map((skill, index) => (
