@@ -28,8 +28,9 @@ function ResumePage() {
     return (
         <div className="min-h-screen">
             <Header />
+            <h1 className="p-10 text-3xl font-mono text-white text-center mb-6">{text}</h1>
             <main className="container mx-auto px-4 pt-24">
-                <h1 className="text-3xl font-mono text-white text-center mb-6">{text}</h1>
+
                 <div className="bg-gradient-to-r from-brightPink to-brightBlue text-white p-5 rounded-lg shadow-xl">
                     <p className="text-lg font-bold slide-transition">Johnson Giang</p>
                     <p className="text-md slide-transition">Phone Number: 587-439-0250</p>

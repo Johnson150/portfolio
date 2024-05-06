@@ -27,7 +27,7 @@ const AboutMe = () => {
             <Header />
             <main className="w-full flex flex-col justify-center items-center text-center mt-5 p-5 rounded-xl shadow-soft">
                 <div className="absolute inset-0 bg-black bg-opacity-30"></div>
-                <h1 className="text-3xl text-vibrantYellow font-mono relative z-10">{text}</h1>
+                <h1 className="text-3xl text-white font-mono relative z-10">{text}</h1>
                 <section className="w-full max-w-4xl mx-auto p-20 rounded-xl shadow-soft bg-transparent text-white relative z-10">
                     <h2 className="text-2xl font-mono">About me</h2>
                     <div className="flex justify-center items-center p-5">
@@ -42,6 +42,7 @@ const AboutMe = () => {
                         After my studies, I plan to pursue a career in Web Development.
                     </p>
                 </section>
+
                 <h2 className="text-2xl font-mono text-vibrantYellow z-10">Additional links</h2>
                 <section className="w-full max-w-4xl mx-auto p-20 z-10">
                     <div className="flex justify-center items-center h-full">
