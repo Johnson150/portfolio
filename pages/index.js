@@ -43,7 +43,7 @@ const AboutMe = () => {
                     </p>
                 </section>
 
-                <h2 className="text-2xl font-mono text-vibrantYellow z-10">Additional links</h2>
+                <h2 className="text-2xl font-mono text-white z-10">Additional links</h2>
                 <section className="w-full max-w-4xl mx-auto p-20 z-10">
                     <div className="flex justify-center items-center h-full">
                         <div className="grid grid-cols-2 gap-4 items-center justify-center">
