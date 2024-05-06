@@ -59,13 +59,13 @@ export default function Contact() {
             <form onSubmit={handleSubmit} className="mt-8 mb-2 w-80 max-w-screen-lg sm:w-96">
                 <div className="mb-4 flex flex-col">
                     <label htmlFor="form-name" className="block text-gray-700 font-medium">Name</label>
-                    <input id="form-name" autoComplete="name" maxLength={50} size="lg" name="name" className="w-full border rounded-md py-2 px-3 mt-1 text-black" />
+                    <input id="form-name" autoComplete="name" maxLength={50} size="lg" name="name" className="w-full border rounded-md py-2 px-3 mt-1 text-white" />
 
                     <label htmlFor="form-email" className="block text-gray-700 font-medium">Email</label>
-                    <input id="form-email" required autoComplete="email" maxLength={80} name="email" type="email" className="w-full border rounded-md py-2 px-3 mt-1 text-black" />
+                    <input id="form-email" required autoComplete="email" maxLength={80} name="email" type="email" className="w-full border rounded-md py-2 px-3 mt-1 text-white" />
 
                     <label htmlFor="form-phone" className="block text-gray-700 font-medium">Phone Number</label>
-                    <input id="form-phone" required autoComplete="tel" maxLength={80} name="phone" type="tel" className="w-full border rounded-md py-2 px-3 mt-1 text-black" />
+                    <input id="form-phone" required autoComplete="tel" maxLength={80} name="phone" type="tel" className="w-full border rounded-md py-2 px-3 mt-1 text-white" />
 
                     <label htmlFor="form-message" className="block text-gray-700 font-medium">Message</label>
                     <textarea id="form-message" required name="message" rows={5} className="w-full border rounded-md py-2 px-3 mt-1 text-black"></textarea>
