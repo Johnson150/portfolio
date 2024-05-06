@@ -39,7 +39,6 @@ const Project = () => {
                         <img src="/NBA player app.png" alt="NBA player app Preview" className="w-2/6 h-1/2 rounded-lg shadow-lg" />
                     </div>
                     <div className="p-5">
-                        <a href="https://github.com/Johnson150/basketballapp" className="mt-12 bg-yellow-500 text-white font-bold py-2 px-4 rounded hover:bg-yellow-600 transition duration-300">Code</a>
                         <a href="https://basketballapp.vercel.app/" className="mx-4 mt-12 bg-yellow-500 text-white font-bold py-2 px-4 rounded hover:bg-yellow-600 transition duration-300">Site</a>
                     </div>
                 </div>
@@ -50,7 +49,6 @@ const Project = () => {
                         <img src="/IMR movie preview.png" alt="IMR Movie App Preview" className="w-2/6 h-1/2 rounded-lg shadow-lg" />
                     </div>
                     <div className="p-5">
-                        <a href="https://github.com/NavkiratPuri/asg3movies" className="mt-12 bg-yellow-500 text-white font-bold py-2 px-4 rounded hover:bg-yellow-600 transition duration-300">Code</a>
                         <a href="https://asg3movies.vercel.app/" className="mx-4 mt-12 bg-yellow-500 text-white font-bold py-2 px-4 rounded hover:bg-yellow-600 transition duration-300">Site</a>
                     </div>
                 </div>
@@ -61,7 +59,6 @@ const Project = () => {
                         <img src="/Unit Converter.png" alt="Unit Converter Preview" className="w-2/6 h-1/2 rounded-lg shadow-lg" />
                     </div>
                     <div className="p-5">
-                        <a href="https://github.com/Johnson150/web-dev-2-assignment.github.io" className="mt-12 bg-yellow-500 text-white font-bold py-2 px-4 rounded hover:bg-yellow-600 transition duration-300">Code</a>
                         <a href="https://johnson150.github.io/web-dev-2-assignment.github.io/" className="mx-4 mt-12 bg-yellow-500 text-white font-bold py-2 px-4 rounded hover:bg-yellow-600 transition duration-300">Site</a>
                     </div>
                 </div>
@@ -72,7 +69,6 @@ const Project = () => {
                         <img src="/raj robot rental.png" alt="Unit Converter Preview" className="w-2/6 h-1/2 rounded-lg shadow-lg" />
                     </div>
                     <div className="p-5">
-                        <a href="https://github.com/Johnson150/Raj-Robot-Rental" className="mt-12 bg-yellow-500 text-white font-bold py-2 px-4 rounded hover:bg-yellow-600 transition duration-300">Code</a>
                         <a href="https://johnson150.github.io/Raj-Robot-Rental/" className="mx-4 mt-12 bg-yellow-500 text-white font-bold py-2 px-4 rounded hover:bg-yellow-600 transition duration-300">Site</a>
                     </div>
                 </div>
