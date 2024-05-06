@@ -9,7 +9,7 @@ const transporter = nodemailer.createTransport({
     },
 });
 
-export async function POST(req, res) {
+export async function POST(req) {
     if (req.method === 'POST') {
         const { email, phone, name, message } = req.body;
 
@@ -18,7 +18,7 @@ export async function POST(req, res) {
                 from: email,
                 to: 'johnson.giang21@gmail.com',
                 subject: 'New Contact Form Submission',
-                text: `You have a new contact form submission from:\n\nName: ${name} \nEmail: ${email}\nPhone: ${phone}\n\nMessage:\n${message}`,
+                text: `You have a new contact form submission from:\n\nName: ${name}\nEmail: ${email}\nPhone: ${phone}\n\nMessage:\n${message}`,
             });
             console.log('Message sent: %s', info.messageId);
             return NextResponse.json({ success: true }, { status: 200 });
