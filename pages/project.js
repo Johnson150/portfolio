@@ -4,7 +4,7 @@ import '../app/globals.css';
 
 const Project = () => {
     const [text, setText] = useState('');
-    const fullText = 'print("Hello Projects!")';
+    const fullText = 'print("Hello Projects!");';
 
     useEffect(() => {
         let index = 0;

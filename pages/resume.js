@@ -7,7 +7,7 @@ import '../app/globals.css';
 
 function ResumePage() {
     const [text, setText] = useState('');
-    const fullText = 'print("Hello Resume!")';
+    const fullText = 'print("Hello Resume!");';
 
     useEffect(() => {
         let index = 0;
