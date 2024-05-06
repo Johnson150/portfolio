@@ -71,8 +71,30 @@ export default function Contact() {
                     <label htmlFor="form-message" className="block text-gray-700 font-medium text-white slide-up">Message</label>
                     <textarea id="form-message" required name="message" rows={5} className="w-full border rounded-md py-2 px-3 mt-1 text-black"></textarea>
                 </div>
-                <button className="rounded bg-sky-400 px-4 py-2" type="submit">Send</button>
+                <button className="rounded bg-sky-400 px-4 py-2 text-white" type="submit">Send</button>
             </form>
+            <div>
+                <section className="w-full max-w-4xl mx-auto p-20 z-10">
+                    <h2 className="text-2xl font-mono text-white z-10">Don&apos;t want to email?</h2>
+                    <div className="flex justify-center items-center h-full">
+                        <div className="p-5 grid grid-cols-2 gap-4 items-center justify-center">
+                            <img
+                                src="/linkedin.png"
+                                alt="LinkedIn Logo"
+                                className="w-16 h-16 aspect-square cursor-pointer shadow-lg"
+                                onClick={() => window.location.href = "https://www.linkedin.com/in/johnson-giang-ab22461a9/"}
+                            />
+                            <img
+                                src="/github logo.png"
+                                alt="GitHub Logo"
+                                className="w-16 h-16 aspect-square cursor-pointer shadow-lg"
+                                onClick={() => window.location.href = "https://github.com/Johnson150"}
+                            />
+                        </div>
+                    </div>
+                    <h2 className="text-2xl font-mono text-white z-10">Phone: 587-439-0250</h2>
+                </section>
+            </div>
         </main>
     )
 }

@@ -43,25 +43,6 @@ const AboutMe = () => {
                     </p>
                 </section>
 
-                <h2 className="text-2xl font-mono text-white z-10">Additional links</h2>
-                <section className="w-full max-w-4xl mx-auto p-20 z-10">
-                    <div className="flex justify-center items-center h-full">
-                        <div className="grid grid-cols-2 gap-4 items-center justify-center">
-                            <img
-                                src="/linkedin.png"
-                                alt="LinkedIn Logo"
-                                className="w-16 h-16 aspect-square cursor-pointer shadow-lg"
-                                onClick={() => window.location.href = "https://www.linkedin.com/in/johnson-giang-ab22461a9/"}
-                            />
-                            <img
-                                src="/github logo.png"
-                                alt="GitHub Logo"
-                                className="w-16 h-16 aspect-square cursor-pointer shadow-lg"
-                                onClick={() => window.location.href = "https://github.com/Johnson150"}
-                            />
-                        </div>
-                    </div>
-                </section>
                 <h2 className="text-2xl font-mono text-white z-10">This site is built with:</h2>
                 <div className="w-full max-w-4xl mx-auto p-20 grid grid-cols-5 gap-4 z-10">
                     <img src="/HTML.png" alt="HTML logo" className="w-full h-auto aspect-square shadow-lg"></img>
