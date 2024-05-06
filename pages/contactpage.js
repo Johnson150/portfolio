@@ -4,11 +4,20 @@ import React, { useState, useEffect } from 'react';
 export default function Contact() {
     async function handleSubmit(event) {
         event.preventDefault();
-        const formData = new FormData(event.target);
+        const formData = {
+            name: event.target.name.value,
+            email: event.target.email.value,
+            phone: event.target.phone.value,
+            message: event.target.message.value
+        };
+
         try {
             const response = await fetch('/api/contact', {
                 method: 'POST',
-                body: formData,
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify(formData),
             });
 
             if (!response.ok) {

@@ -11,9 +11,12 @@ const transporter = nodemailer.createTransport({
 
 export async function POST(req) {
     if (req.method === 'POST') {
-        const { email, phone, name, message } = req.body;
-
         try {
+            // Parse the request body as JSON
+            const body = JSON.parse(await req.text());
+
+            const { email, phone, name, message } = body;
+
             const info = await transporter.sendMail({
                 from: email,
                 to: 'johnson.giang21@gmail.com',
