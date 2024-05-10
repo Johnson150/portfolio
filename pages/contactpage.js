@@ -65,6 +65,7 @@ export default function Contact() {
         <main className="flex min-h-screen flex-col items-center bg-gradient-to-r from-brightPink to-brightBlue">
             <Header />
             <h1 className="p-10 text-3xl text-white font-mono relative z-10">{text}</h1>
+            <p className="text-white text-lg"> The form will send to my personal email</p>
             {!isEmailSent ? (
                 <form onSubmit={handleSubmit} className="mt-8 mb-2 w-80 max-w-screen-lg sm:w-96">
                     <div className="mb-4 flex flex-col">
