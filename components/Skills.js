@@ -36,8 +36,7 @@ function SkillsComponent() {
                 <ul>
                     {skills.map((skill, index) => (
                         <li key={index}>
-                            <h2 className="text-2xl font-semibold slide-transition" >{skill.name}</h2>
-                            <p className="mt-2 text-lg slide-transition">Level: {skill.level}</p>
+                            <p className="p-2 text-xl font-semibold slide-transition" >{skill.name}</p>
                         </li >
                     ))
                     }

@@ -29,8 +29,7 @@ export const PATCH = async (request, { params }) => {
     try {
         const body = await request.json();
         const { id } = params;
-        const { name,
-            level } = body;
+        const { name } = body;
         // updates the player in the database
         const updateSkills = await client.skills.update({
             where: {
