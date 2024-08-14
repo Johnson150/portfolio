@@ -38,8 +38,7 @@ const AboutMe = () => {
                         Looking for a more creative outlet in my post-secondary life, I decided to pursue the Information Technology and Software Development diploma at the Southern Alberta Institute of Technology.
                         Being able to create applications has always interested me, and going to SAIT really helped me learn lots of skills that will help me in my future professional life.
                         In my year and a half at SAIT, I have learned many programming languages such as PL/SQL, Python, Java, and C#. I&apos;ve also learned and worked with software such as Figma and SIM (Software Ideas Modeler).
-                        Through my studies, I have found myself absolutely fascinated with the world of web development. I have learned crucial skills in HTML, CSS, JavaScript, React.js, and Next.js.
-                        After my studies, I plan to pursue a career in Web Development.
+                        Through my studies, I have found myself absolutely fascinated with the world of Software development and educating others. I have learned crucial skills in HTML, CSS, JavaScript, React.js, and Next.js on already existing knowledge base of Microsoft Office applications.
                     </p>
                 </section>
 
