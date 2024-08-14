@@ -36,7 +36,7 @@ const Project = () => {
                     </p>
                     <p className="mt-2 text-lg text-white">This is a ongoing project with even more functionality in the near future!</p>
                     <div className="p-5 flex justify-center items-center">
-                        <img src="/NBA player app.png" alt="NBA player app Preview" className="w-2/6 h-1/2 rounded-lg shadow-lg" />
+                        <img src="/NBA app.png" alt="NBA player app Preview" className="w-2/6 h-1/2 rounded-lg shadow-lg" />
                     </div>
                     <div className="p-5">
                         <a className="mx-4 mt-12 bg-red-500 text-white font-bold py-2 px-4 rounded-full hover:bg-red-600 transition duration-300">React.js</a>
@@ -46,7 +46,7 @@ const Project = () => {
                         <a className="mx-4 mt-12 bg-purple-500 text-white font-bold py-2 px-4 rounded-full hover:bg-purple-600 transition duration-300">Next.js</a>
                     </div>
                     <div className="p-5">
-                        <a href="https://basketballapp.vercel.app/" className="mx-4 mt-12 bg-yellow-500 text-white font-bold py-2 px-4 rounded hover:bg-yellow-600 transition duration-300">Site</a>
+                        <a href="https://nba-project-mu.vercel.app/" className="mx-4 mt-12 bg-yellow-500 text-white font-bold py-2 px-4 rounded hover:bg-yellow-600 transition duration-300">Site</a>
                     </div>
 
                 </div>
