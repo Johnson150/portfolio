@@ -30,11 +30,12 @@ const Project = () => {
                 <div className="p-20">
                     <h2 className="text-2xl font-bold text-white">NBA App</h2>
                     <p className="mt-2 text-lg text-white">
-                        This app offers a range of features designed to enhance the basketball fan experience. Users can add, remove, and edit player profiles, empowering them to curate their own personalized roster. Additionally, the app enables users to explore player statistics through intuitive filtering based on specific stat categories. With a convenient search bar, users can easily look up specific players of interest.
+                        Our group developed an NBA app tailored to enhance the experience of both casual and hardcore basketball fans. Users can manage player profiles by adding, removing, and editing them, allowing for personalized roster creation. The app also features intuitive filtering options for exploring player statistics by specific categories, with a convenient search bar to quickly locate specific players.
                         <br /><br />
-                        In addition to these player management capabilities, the app boasts a fully functional sign-up and login page, ensuring a secure and personalized user experience. Furthermore, the inclusion of a trade simulator adds an exciting dynamic, allowing users to simulate player trades by selecting up to two players to exchange.
+                        Beyond player management, the app offers a secure sign-up and login system, ensuring personalized experiences. Additionally, the app includes a trade simulator that adds an engaging dynamic, enabling users to simulate trades by selecting up to two players for exchange. Other features include viewing team rosters by year, current standings, and playing NBA-themed games, all aimed at delivering a comprehensive basketball experience.
                     </p>
-                    <p className="mt-2 text-lg text-white">This is a ongoing project with even more functionality in the near future!</p>
+
+
                     <div className="p-5 flex justify-center items-center">
                         <img src="/NBA app.png" alt="NBA player app Preview" className="w-2/6 h-1/2 rounded-lg shadow-lg" />
                     </div>
